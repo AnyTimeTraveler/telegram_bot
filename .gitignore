@@ -1,0 +1,10 @@
+temp.json
+telegram_bot.json
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/telegrambot.iml
+.idea/workspace.xml
+.idea/vcs.xml
+__pycache__/
+modules/__pycache__/
