@@ -14,7 +14,8 @@ class Ping:
         listeners['edited_message'].remove(self)
 
     def handle_message(self, manager, bot, message):
-        bot.send_message(chat_id=message.chat.id, text='Pong!', reply_to_message=message)
+        if message.text and message.text.startswith('/ping'):
+            bot.send_message(chat_id=message.chat.id, text='Pong!', reply_to_message_id=message.message_id)
 
     def handle_edited_message(self, manager, bot, message):
         self.handle_message(manager, bot, message)

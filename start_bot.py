@@ -71,7 +71,7 @@ class Main:
                     else:
                         print("Unhandled")
                 if not updates:
-                    sleep(1)
+                    sleep(0.05)
 
     """
     Save the config before exiting

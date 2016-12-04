@@ -3,12 +3,12 @@ def get_name():
 
 
 def load(listeners):
-    listeners['UPDATE_TYPE'].append(Template())
+    listeners['message'].append(Template())
 
 
 class Template:
     def unload(self, listeners):
-        listeners['UPDATE_TYPE'].remove(self)
+        listeners['message'].remove(self)
 
     def handle_message(self, manager, bot, update):
         pass
